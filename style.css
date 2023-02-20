@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Tusker Grotesk';
+    src: url(/fonts/tusker-grotesk-font/TuskerGrotesk-3700Bold.ttf);
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Tusker Grotesk';
+    src: url(/Fonts/tusker-grotesk-font/TuskerGrotesk-2700Bold.ttf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Tusker Grotesk';
+    src: url(/Fonts/tusker-grotesk-font/TuskerGrotesk-1600Semibold.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url(/Fonts/tusker-grotesk-font/OTF/PPNeueMontreal-Thin.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url(/Fonts/tusker-grotesk-font/OTF/PPNeueMontreal-Book.otf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family:'Neue Montreal' ;
+    src: url(Fonts/tusker-grotesk-font/OTF/PPNeueMontreal-Bold.otf);
+    font-style: normal;
+    font-weight: 600;
+
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url(/Fonts/tusker-grotesk-font/OTF/PPNeueMontreal-Medium.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --main-font: 'Neue Montreal';
+    --main-text-weight: 100;
+    --main-text-size: 100px;
+    --main-title-weight: 400;
+
+}
+/*Hero Styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    
+}
+
+h1{
+    font-family: 'Tusker Grotesk';
+    font-weight: 600;
+    font-size: 200px;
+    line-height: 1;
+    margin:0;
+    padding: 0;
+}
+
+.main-text p{
+    font-family: 'Neue Montreal';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.hero-container{
+    background: linear-gradient(rgba(65,143,191,0.222), rgba(65,143,191,0.322)), url("/images/sky-hero.jpg") no-repeat center / cover ;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.row.hero{
+    padding: 10px 20px;
+    max-width: 100%;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+   
+}
+
+.col-sm-6.right{
+    display: flex;
+    justify-content: flex-end;
+}
+.main-text{
+
+max-width: 550px;
+   margin: 0;
+   padding: 0;
+   text-align: end;
+   font-weight: ;
+}
+
+button{
+    border: 3px solid white;
+    border-radius: 40px;
+    padding: 1px 18px;
+    font-size: 34px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    background-color: transparent;
+    margin-bottom: 15px;
+}
