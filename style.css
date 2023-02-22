@@ -242,7 +242,7 @@ h3{
 }
 
 .row.contact{
-    max-width: 85%;
+    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
@@ -252,7 +252,7 @@ h3{
 
 font-family: 'Tusker Grotesk';
 font-weight: 600;
-font-size: 250px;
+font-size: 280px;
 margin: 0;
 padding: 0;
 line-height: 1.1;
@@ -281,7 +281,8 @@ font-family: var(--main-font);
     font-size: 20px;
     font-weight: 400;
     list-style: none;
-    margin-right: 20px;
+    padding-right: 20px;
+    
 
 }
 
@@ -291,5 +292,28 @@ font-family: var(--main-font);
     display: flex;
     flex-direction: row;
     justify-content:left ;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+a:hover{
+    text-decoration-line: line-through;
+}
+
+#contact-button{
+    background-color: white;
+    color:#3B6D8C;
+    display: inline;
+    margin-left: 20px;
+}
+
+.socials-container{
+    margin-bottom: 23px;
+    border-top: 2px solid white;
+    padding-top: 20px;
 }
 
