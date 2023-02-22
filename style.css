@@ -54,6 +54,12 @@
     --main-title-weight: 400;
 
 }
+
+.emojis{
+font-size: 30px;
+color:#F2C7BD;
+margin-right: 10px;
+}
 /*Hero Styling */
 *{
     padding: 0;
@@ -109,9 +115,9 @@ body{
 .main-text{
 text-align: start;
 max-width: 600px;
+font-size: 30px;
    margin: 0;
    padding: 0;
-   
    line-height: 1.1;
 }
 .right{
@@ -123,6 +129,7 @@ button{
     border-radius: 40px;
     padding: 5px 18px;
     font-size: 34px;
+    line-height: 37px;
     font-family: var(--main-font);
     font-weight: 400;
     background-color: transparent;
@@ -167,8 +174,7 @@ li.nav-item{
 
 .about-container{
     background: linear-gradient(rgba(59,109,140, 100%), rgba(59,109,140, 100%) );
-    margin-top: -250px;
-    padding-top: 200px;
+    
     background-attachment: fixed;
     padding-bottom: 80px;
 }
@@ -178,16 +184,16 @@ li.nav-item{
     margin: 0 auto;
 }
 
-h2{
+.row.about h2{
     font-family: 'Tusker Grotesk';
     font-size: 103px;
     font-weight: 600;
 }
 
 p, li{
-    font-family: 'Neue Montreal';
+    font-family: var(--main-font);
     font-size: 28px;
-    font-weight: 100;
+    font-weight: var(--main-text-weight);
 }
 
 .portrait-container{
@@ -195,3 +201,95 @@ p, li{
     flex-direction: row;
     justify-content: end;
 }
+
+.works-container{
+    background: linear-gradient(rgba(59,109,140, 100%), rgba(59,109,140, 100%) );
+    padding-top: 150px;
+    background-attachment: fixed;
+    padding-bottom: 150px;
+
+}
+
+.row.works{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+
+}
+
+h2{
+    font-family: var(--main-font);
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+h3{
+    font-family: 'Tusker Grotesk';
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+/*CONTACT SECTION*/
+
+.contact-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.row.contact{
+    max-width: 85%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+.big-text{ 
+
+font-family: 'Tusker Grotesk';
+font-weight: 600;
+font-size: 250px;
+margin: 0;
+padding: 0;
+line-height: 1.1;
+
+}
+
+.works-text{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    
+}
+
+.contact-block{
+    margin-top: 100px;
+
+}
+
+.secondary-text{
+font-family: var(--main-font);
+    font-size: 30px;
+    font-weight: 400; }
+
+.socials{
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 400;
+    list-style: none;
+    margin-right: 20px;
+
+}
+
+.socials-ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:left ;
+}
+
