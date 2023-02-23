@@ -49,7 +49,7 @@
 
 :root{
     --main-font: 'Neue Montreal';
-    --main-text-weight: 100;
+    --main-text-weight: 300;
     --main-text-size: 100px;
     --main-title-weight: 400;
 
@@ -124,16 +124,20 @@ font-size: 30px;
     text-align: end;
 }
 
-button{
+.buttons{
     border: 4px solid white;
     border-radius: 40px;
-    padding: 5px 18px;
+    padding: 2px 18px;
     font-size: 34px;
-    line-height: 37px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: white;
     font-family: var(--main-font);
     font-weight: 400;
     background-color: transparent;
+    display:inline-block;
     margin-bottom: 15px;
+
     transition: all 200ms ease-in-out;
 }
 
@@ -141,7 +145,7 @@ button{
     float: right;
 }
 
-button:hover{
+.buttons:hover{
     border: none;
     background-color: #F2BDDA;
     border: 2px solid #F2BDDA;
@@ -173,10 +177,10 @@ li.nav-item{
 /*About Section*/
 
 .about-container{
-    background: linear-gradient(rgba(59,109,140, 100%), rgba(59,109,140, 100%) );
-    
-    background-attachment: fixed;
+    background: linear-gradient(rgba(228,187,206, 0), rgba(228,187,206, 100%), rgba(228,187,206, 100%));
+    margin-top: -200px;
     padding-bottom: 80px;
+    padding-top: 80px;
 }
 
 .row.about{
@@ -203,18 +207,21 @@ p, li{
 }
 
 .works-container{
-    background: linear-gradient(rgba(59,109,140, 100%), rgba(59,109,140, 100%) );
-    padding-top: 150px;
-    background-attachment: fixed;
-    padding-bottom: 150px;
+    background: linear-gradient(rgba(228,187,206, 100%), rgba(228,187,206, 100%), rgba(228,187,206, 100%), rgba(228,187,206, 100%), rgba(228,187,206, 0) );
+    padding-top: 20px;
+    
+    padding-bottom: 200px;
 
+}
+
+.emojis{
+    color:#F2C7BD;
 }
 
 .row.works{
     max-width: 80%;
     margin: 0 auto;
     margin-top: 5%;
-
 }
 
 h2{
@@ -267,7 +274,7 @@ line-height: 1.1;
 }
 
 .contact-block{
-    margin-top: 100px;
+    margin-top: 200px;
 
 }
 
@@ -294,13 +301,13 @@ font-family: var(--main-font);
     justify-content:left ;
 }
 
-a{
+.socials-button{
     color: white;
     text-decoration: none;
     padding-left: 5px;
 }
 
-a:hover{
+.socials-button:hover{
     text-decoration-line: line-through;
 }
 
@@ -310,10 +317,204 @@ a:hover{
     display: inline;
     margin-left: 20px;
 }
-
+#contact-button:hover{
+    background-color: #A2DCF2;
+    color: #3B6D8C;
+    border: 3px solid #A2DCF2;
+}
 .socials-container{
     margin-bottom: 23px;
-    border-top: 2px solid white;
-    padding-top: 20px;
+    border-top: 2px solid white;padding-top: 20px;
 }
 
+
+.margin2{
+    margin-left: 100px;
+}
+
+.margin3{
+    margin-left: 5px;
+}
+
+.margin1, .margin2, .margin3{
+border: 1.5px solid white;
+}
+
+@media (max-width:576px){
+    h1{
+        font-size: 130px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .big-text{
+        font-size: 120px;
+    }
+    .main-text{  
+        height: 600px;
+        text-align: right;
+
+    }
+
+    .main-text p{
+    
+        font-size: 22px;
+    }
+
+    .row.hero{ 
+        margin-top: 100px;
+        ;
+
+    }
+
+    .buttons{
+        font-size: 25px;
+    }
+.about-container{
+    margin-top: -350px;
+}
+
+.row.about{
+    max-width: 85%;
+}
+
+
+p, li{
+    font-size: 20px;
+}
+
+.portrait{
+    width: 300px;
+}
+
+.portrait-container{
+    display: flex;
+
+    padding-top: 20px;
+    justify-content: center;
+}
+
+h3{
+    text-align: center;
+    display: none;
+}
+
+.p-description{
+    display:none;
+}
+
+.contact-container{ 
+margin-top: 50px;}
+
+.margin1, .margin2, .margin3{
+    margin-left: 0px;
+}
+
+.secondary-text{
+    font-size: 20px;
+}
+
+.contact-block{
+    margin-top: 100px;
+}
+
+.socials-container{
+    margin-top: 20px;
+}
+
+#contact-button{
+    margin-left: 0px;
+}
+
+.fa-brands{
+    display:none;
+}
+
+}
+
+@media(max-width: 770px){
+    h1{
+        font-size: 130px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .big-text{
+        font-size: 120px;
+    }
+    .main-text{  
+        height: 600px;
+        text-align: right;
+
+    }
+
+    .main-text p{
+    
+        font-size: 22px;
+    }
+
+    .row.hero{ 
+        margin-top: 100px;
+        ;
+
+    }
+
+    .buttons{
+        font-size: 25px;
+    }
+.about-container{
+    margin-top: -350px;
+}
+
+.row.about{
+    max-width: 85%;
+}
+
+
+p, li{
+    font-size: 20px;
+}
+
+.portrait{
+    width: 300px;
+}
+
+.portrait-container{
+    display: flex;
+
+    padding-top: 20px;
+    justify-content: center;
+}
+
+h3{
+    text-align: center;
+    display: none;
+}
+
+.p-description{
+    display:none;
+}
+
+.contact-container{ 
+margin-top: 50px;}
+
+.margin1, .margin2, .margin3{
+    margin-left: 0px;
+}
+
+.secondary-text{
+    font-size: 20px;
+}
+
+.contact-block{
+    margin-top: 100px;
+}
+
+.socials-container{
+    margin-top: 20px;
+}
+
+#contact-button{
+    margin-left: 0px;
+}
+
+
+}
