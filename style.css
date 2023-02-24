@@ -303,7 +303,7 @@ font-family: var(--main-font);
     margin: 0;
     display: flex;
     flex-direction: row;
-    justify-content:left ;
+    justify-content:right ;
 }
 
 .socials-button{
@@ -347,6 +347,19 @@ border: 1.5px solid white;
 
 
 
+.shrink img {
+    transition: 1s ease;
+    }
+    
+    .shrink img:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    }
+    
+
+
 @media (min-width: 0px) and (max-width:575px){
     h1{
         font-size: 130px;
@@ -357,6 +370,9 @@ border: 1.5px solid white;
         font-size: 120px;
     }
 
+    .row.hero{
+        margin-top: -50px;
+    }
     #main-button{
         font-size: 20px;
     }
@@ -395,7 +411,7 @@ p, li{
 }
 
 .portrait{
-    width: 300px;
+    width: 200px;
 }
 
 .portrait-container{
@@ -440,7 +456,7 @@ padding-top: 10px;}
 
 
 .nav-link{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .p-description{
