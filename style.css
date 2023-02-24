@@ -50,8 +50,12 @@
 :root{
     --main-font: 'Neue Montreal';
     --main-text-weight: 300;
-    --main-text-size: 100px;
     --main-title-weight: 400;
+    --text-font-size: 30px;
+    --button-size: 34px;
+    --h3-font-size: 80px;
+    --h2-font-size: 103px;
+
 
 }
 
@@ -78,16 +82,22 @@ h1{
     padding: 0;
 }
 
+#sign{
+font-size: 50px;
+color: #F2BDDA;
+}
+
 .main-text p{
     font-family: 'Neue Montreal';
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: var(--text-font-size);
 }
 
 .hero-container{
-    height: 140vh;
+    height: 100vh;
     width: 100%;
+    margin-bottom: 100px;
 
 }
 
@@ -99,7 +109,7 @@ body{
 }
 
 .row.hero{
-    padding: 10px 20px;
+    padding: 0px 20px;
     max-width: 100%;
     margin: 0;
     height: 100vh;
@@ -108,14 +118,15 @@ body{
    
 }
 
-.col-sm-6.right{
+.col-lg-6.right{
     display: flex;
     justify-content: flex-end;
+    padding-bottom: 20px;
 }
 .main-text{
 text-align: start;
 max-width: 600px;
-font-size: 30px;
+font-size: var(--text-font-size);
    margin: 0;
    padding: 0;
    line-height: 1.1;
@@ -128,7 +139,7 @@ font-size: 30px;
     border: 4px solid white;
     border-radius: 40px;
     padding: 2px 18px;
-    font-size: 34px;
+    font-size: var(--button-size);
     line-height: 1.2;
     text-decoration: none;
     color: white;
@@ -143,6 +154,7 @@ font-size: 30px;
 
 #main-button{
     float: right;
+    font-size: var(--button-size);
 }
 
 .buttons:hover{
@@ -178,7 +190,6 @@ li.nav-item{
 
 .about-container{
     background: linear-gradient(rgba(228,187,206, 0), rgba(228,187,206, 100%), rgba(228,187,206, 100%));
-    margin-top: -200px;
     padding-bottom: 80px;
     padding-top: 80px;
 }
@@ -190,13 +201,13 @@ li.nav-item{
 
 .row.about h2{
     font-family: 'Tusker Grotesk';
-    font-size: 103px;
+    font-size: var(--h2-font-size);
     font-weight: 600;
 }
 
 p, li{
     font-family: var(--main-font);
-    font-size: 28px;
+    font-size: var(--text-font-size);
     font-weight: var(--main-text-weight);
 }
 
@@ -209,13 +220,12 @@ p, li{
 .works-container{
     background: linear-gradient(rgba(228,187,206, 100%), rgba(228,187,206, 100%), rgba(228,187,206, 100%), rgba(228,187,206, 100%), rgba(228,187,206, 0) );
     padding-top: 20px;
-    
     padding-bottom: 200px;
 
 }
 
 .emojis{
-    color:#F2C7BD;
+    color: #A2DCF2;
 }
 
 .row.works{
@@ -224,16 +234,10 @@ p, li{
     margin-top: 5%;
 }
 
-h2{
-    font-family: var(--main-font);
-    font-size: 30px;
-    font-weight: 400;
-
-}
 
 h3{
     font-family: 'Tusker Grotesk';
-    font-size: 80px;
+    font-size: var(--h3-font-size);
     font-weight: 600;
     letter-spacing: 2px;
 
@@ -242,7 +246,8 @@ h3{
 /*CONTACT SECTION*/
 
 .contact-container{
-    height: 100vh;
+    
+    padding-top: 30px;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -280,7 +285,7 @@ line-height: 1.1;
 
 .secondary-text{
 font-family: var(--main-font);
-    font-size: 30px;
+    font-size: var(--text-font-size);
     font-weight: 400; }
 
 .socials{
@@ -314,8 +319,8 @@ font-family: var(--main-font);
 #contact-button{
     background-color: white;
     color:#3B6D8C;
-    display: inline;
-    margin-left: 20px;
+    font-size: var(--button-size);
+    
 }
 #contact-button:hover{
     background-color: #A2DCF2;
@@ -340,7 +345,9 @@ font-family: var(--main-font);
 border: 1.5px solid white;
 }
 
-@media (max-width:576px){
+
+
+@media (min-width: 0px) and (max-width:575px){
     h1{
         font-size: 130px;
         text-align: left;
@@ -349,128 +356,42 @@ border: 1.5px solid white;
     .big-text{
         font-size: 120px;
     }
-    .main-text{  
-        height: 600px;
-        text-align: right;
 
-    }
-
-    .main-text p{
-    
+    #main-button{
         font-size: 20px;
     }
-
-    .row.hero{ 
-        margin-top: 100px;
-        ;
-
-    }
-
-    .buttons{
-        font-size: 22px;
-    }
-.about-container{
-    margin-top: -350px;
-}
-
-.row.about{
-    max-width: 85%;
-}
-
-
-p, li{
-    font-size: 20px;
-}
-
-.portrait{
-    width: 300px;
-}
-
-.portrait-container{
-    display: flex;
-
-    padding-top: 20px;
-    justify-content: center;
-}
-
-h3{
-    text-align: center;
-    display: none;
-}
-
-.p-description{
-    display:none;
-}
-
-.contact-container{ 
-margin-top: 50px;}
-
-.margin1, .margin2, .margin3{
-    margin-left: 0px;
-}
-
-.secondary-text{
-    font-size: 20px;
-}
-
-.contact-block{
-    margin-top: 100px;
-}
-
-.socials-container{
-    margin-top: 20px;
-}
-
-#contact-button{
-    margin-left: 0px;
-}
-
-.fa-brands{
-    display:none;
-}
-
-}
-
-@media(max-width: 770px){
-    h1{
-        font-size: 130px;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    .big-text{
-        font-size: 120px;
-    }
     .main-text{  
-        height: 600px;
         text-align: right;
+        margin-top: -200px;
 
+    }
+
+    .about-container{
+        padding-top: 10px;
     }
 
     .main-text p{
     
-        font-size: 22px;
+        font-size: 18px;
     }
 
-    .row.hero{ 
-        margin-top: 100px;
-        ;
 
-    }
 
     .buttons{
-        font-size: 25px;
+        font-size: 15px;
     }
-.about-container{
-    margin-top: -350px;
-}
 
 .row.about{
     max-width: 85%;
 }
 
+.row.about h2{
+    font-size: 70px;
+}
+
 
 p, li{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .portrait{
@@ -486,22 +407,18 @@ p, li{
 
 h3{
     text-align: center;
-    display: none;
-}
-
-.p-description{
-    display:none;
 }
 
 .contact-container{ 
-margin-top: 50px;}
+padding-top: 10px;}
 
 .margin1, .margin2, .margin3{
     margin-left: 0px;
+    font-size: 20px;
 }
 
 .secondary-text{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .contact-block{
@@ -512,9 +429,101 @@ margin-top: 50px;}
     margin-top: 20px;
 }
 
+.socials-button{
+    font-size: 13px;;
+}
+
 #contact-button{
     margin-left: 0px;
+    font-size: 20px;
 }
 
 
+.nav-link{
+    font-size: 18px;
 }
+
+.p-description{
+    display: none;
+}
+ h3{
+    display: none;
+ }
+
+};
+
+
+@media (min-width: 576px) and (max-width: 811px){
+
+h1{
+    font-size: 150px;
+}
+
+.row.hero{
+    padding-top: 100px
+}
+.row.hero p{
+    margin-bottom: 0;
+}
+.main-text p{
+    font-size: 28px;
+    
+}
+
+.main-text{
+    max-width: 725px;
+}
+
+.p-description{
+    display: none;
+}
+
+.portrait{
+    width: 300px;
+}
+
+.portrait-container{
+    display: flex;
+
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.row.about p, li{
+    font-size: 22px;
+}
+
+.row.about h2{
+    font-size: 90px;
+}
+
+.row.about{
+    max-width: 90%;
+}
+
+h3{
+    font-size: 70px;
+}
+
+.big-text{
+    font-size: 150px;
+}
+
+.secondary-text{
+    font-size: 28px;
+}
+
+.buttons{
+    font-size: 30px;
+}
+#contact-button{
+    font-size: 30px;
+}
+
+.margin1, .margin2, .margin3{
+    margin-left: 0px;}
+
+.contact-block{
+    margin-top: 70px;
+}
+};
