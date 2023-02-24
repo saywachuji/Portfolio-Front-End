@@ -77,7 +77,7 @@ h1{
     font-family: 'Tusker Grotesk';
     font-weight: 600;
     font-size: 200px;
-    line-height: 1;
+    line-height: 0.7;
     margin:0;
     padding: 0;
 }
@@ -466,7 +466,7 @@ padding-top: 10px;}
     display: none;
  }
 
-};
+}
 
 
 @media (min-width: 576px) and (max-width: 811px){
@@ -542,4 +542,4 @@ h3{
 .contact-block{
     margin-top: 70px;
 }
-};
+}
