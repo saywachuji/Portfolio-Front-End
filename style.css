@@ -76,8 +76,8 @@ margin-right: 10px;
 h1{
     font-family: 'Tusker Grotesk';
     font-weight: 600;
-    font-size: 200px;
-    line-height: 0.7;
+    font-size: 219px;
+    line-height: 1;
     margin:0;
     padding: 0;
 }
@@ -356,8 +356,8 @@ border: 1.5px solid white;
     -ms-transform: scale(0.8);
     transform: scale(0.8);
     transition: 1s ease;
-    }
-    
+    };
+
 
 
 @media (min-width: 0px) and (max-width:575px){
@@ -542,4 +542,70 @@ h3{
 .contact-block{
     margin-top: 70px;
 }
-}
+};
+
+
+@media (min-width: 812px) and (max-width: 992px){
+    h1{
+        font-size: 170px;
+    }
+
+    .big-text{
+        font-size: 170px;
+    }
+
+    .main-text{
+        max-width: 775px;
+    }
+
+    .main-text p{
+        font-size: 29px;
+    }
+    .row.hero{
+        padding-top: 100px
+    }
+    .row.about{
+        max-width: 90%;
+    }
+    .row.about p, li{
+        font-size: 25px;
+    }
+    .portrait{
+        width: 300px;
+    }
+    .portrait-container{
+        display: flex;
+        padding-top: 20px;
+        justify-content: center;
+    }
+    .row.works p{
+        font-size: 22px;
+    }
+    .secondary-text{
+        font-size: 29px;
+    }
+    
+    .contact-block{
+        margin-top: 90px;
+    }
+};
+
+@media (min-width: 993px) and (max-width: 1280px){
+    .big-text{
+        display: block;
+        font-size: 213px;
+    }
+    .row.about{
+        max-width: 80%;
+    }
+    .row.works p{
+        font-size: 29px;
+    }
+    .portrait-container{
+        display: flex;
+        padding-top: 20px;
+        justify-content: center;
+    }
+};
+
+
