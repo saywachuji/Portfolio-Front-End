@@ -351,12 +351,12 @@ border: 1.5px solid white;
     transition: 1s ease;
     }
     
-    .shrink img:hover{
+.shrink img:hover{
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
     transition: 1s ease;
-    };
+    }
 
 
 
@@ -542,8 +542,7 @@ h3{
 .contact-block{
     margin-top: 70px;
 }
-};
-
+}
 
 @media (min-width: 812px) and (max-width: 992px){
     h1{
@@ -588,9 +587,9 @@ h3{
     .contact-block{
         margin-top: 90px;
     }
-};
+}
 
-@media (min-width: 993px) and (max-width: 1280px){
+@media (min-width: 993px) and (max-width: 1200px){
     .big-text{
         display: block;
         font-size: 213px;
@@ -606,6 +605,11 @@ h3{
         padding-top: 20px;
         justify-content: center;
     }
-};
+}
 
+@media (min-width: 1201px) and (max-width: 1360px){
+    .big-text{
+        font-size: 238px;
+    }
+}
 
