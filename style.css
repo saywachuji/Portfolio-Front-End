@@ -107,6 +107,18 @@ body{
     overflow-x: hidden;
     overflow-y: scroll;
 }
+ h1, .text-main{
+    animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+ }
+
+ @keyframes reveal {
+    0% {
+      transform: translate(0,100%);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+  }
 
 .row.hero{
     padding: 0px 20px;
@@ -155,6 +167,7 @@ font-size: var(--text-font-size);
 #main-button{
     float: right;
     font-size: var(--button-size);
+    
 }
 
 .buttons:hover{
@@ -350,6 +363,7 @@ border: 1.5px solid white;
 
 .shrink img {
     transition: 1s ease;
+    box-shadow: 15px 15px 10px rgba(128, 128, 128, 0.4);
     }
     
 .shrink img:hover{
