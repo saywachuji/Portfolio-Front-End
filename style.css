@@ -160,7 +160,7 @@ font-size: var(--text-font-size);
 .buttons:hover{
     border: none;
     background-color: #F2BDDA;
-    border: 4px solid #F2BDDA;
+    border: 1px solid #F2BDDA;
     color: #3B6D8C;
 }
 
