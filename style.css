@@ -262,6 +262,45 @@ h3{
 
 }
 
+/*SLIDING TEXT*/
+
+.sliding-text-container{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    padding: 0;
+    
+}
+.sliding-text-container p{
+
+    white-space: nowrap;
+    animation: move-rtl 3s linear infinite;
+    padding: 0 1rem;
+    font-weight: 600;
+    font-family: 'Tusker Grotesk';
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: 0;
+    color: pink;
+   
+
+    
+}
+
+
+@keyframes move-rtl {
+    0%{
+        transform: translateX(0%);
+    
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+  
 /*CONTACT SECTION*/
 
 .contact-container{
