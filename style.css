@@ -73,7 +73,7 @@ margin-right: 10px;
     
 }
 
-.h1{
+h1{
     font-family: 'Tusker Grotesk';
     font-weight: 600;
     font-size: 219px;
@@ -107,7 +107,7 @@ body{
     overflow-x: hidden;
     overflow-y: scroll;
 }
- .h1, .text-main{
+ h1, .text-main{
     animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
  }
 
@@ -444,7 +444,7 @@ padding: 4px 18px;
 }
 
 @media (min-width: 0px) and (max-width:575px){
-    .h1{
+    h1{
         font-size: 130px;
         text-align: left;
         margin-bottom: 20px;
@@ -563,7 +563,7 @@ padding-bottom: 0;}
 
 @media (min-width: 576px) and (max-width: 811px){
 
-.h1{
+h1{
     font-size: 150px;
 
 }
@@ -639,7 +639,7 @@ h3{
 }
 
 @media (min-width: 812px) and (max-width: 992px){
-    .h1{
+    h1{
         font-size: 170px;
         
     }
@@ -714,7 +714,7 @@ h3{
         font-size: 300px;
     }
 
-    .h1{
+    h1{
         font-size: 260px;
     }
 }
