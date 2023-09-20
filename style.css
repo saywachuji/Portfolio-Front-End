@@ -445,12 +445,12 @@ padding: 4px 18px;
 
 @media (min-width: 0px) and (max-width:575px){
     h1{
-        font-size: 130px;
+        font-size: 100px;
         text-align: left;
         margin-bottom: 20px;
     }
     .big-text{
-        font-size: 120px;
+        font-size: 50px;
     }
 
     .row.hero{
@@ -613,7 +613,7 @@ h3{
 }
 
 .big-text{
-    font-size: 150px;
+    font-size: 50px;
     position: aboslute;
     bottom: 0;
 
