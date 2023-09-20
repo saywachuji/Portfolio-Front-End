@@ -450,7 +450,7 @@ padding: 4px 18px;
         margin-bottom: 20px;
     }
     .big-text{
-        font-size: 50px;
+        font-size: 100px;
     }
 
     .row.hero{
@@ -613,7 +613,7 @@ h3{
 }
 
 .big-text{
-    font-size: 50px;
+    font-size: 130px;
     position: aboslute;
     bottom: 0;
 
