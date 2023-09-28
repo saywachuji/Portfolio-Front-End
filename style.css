@@ -101,12 +101,18 @@ color: #F2BDDA;
 
 }
 
-body{
-    background: linear-gradient(rgba(65,143,191,0.222), rgba(65,143,191,0.322)), url("/images/sky-hero.jpg") no-repeat center / cover ;
-    background-attachment: fixed;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
+
+    body {
+        background: linear-gradient(rgba(65,143,191,0.222), rgba(65,143,191,0.322));
+        background-attachment: fixed;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background-image: url("/images/sky-hero.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
  h1, .text-main{
     animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
  }
